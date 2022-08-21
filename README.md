@@ -1,4 +1,4 @@
-# Monaco Editor  ES module version
+# Monaco Editor ES module version
 
 [![Build Status](https://dev.azure.com/ms/monaco-editor/_apis/build/status/microsoft.monaco-editor?label=website)](https://dev.azure.com/ms/monaco-editor/_build/latest?definitionId=3)
 
@@ -19,6 +19,7 @@ import { monaco } from "https://code4fukui.github.io/monaco-editor/monaco.js";
 const editor = monaco.editor.create(container, { language: "html" });
 editor.setValue("abc");
 ```
+
 - [sample html](index.html) - [online demo](https://code4fukui.github.io/monaco-editor/)
 
 ## How to build
@@ -26,10 +27,13 @@ editor.setValue("abc");
 ```sh
 npm i
 npm run release
-cat <<EOF >> release/min/vs/loader.js
+sed -e "s/_amdLoaderGlobal=this,/_amdLoaderGlobal=globalThis,/g" release/min/vs/loader.js > release/min/vs/loader2.js
+cat <<EOF >> release/min/vs/loader2.js
 const _require = globalThis.require;
 export { _require as require };
 EOF
+rm release/min/vs/loader.js
+mv release/min/vs/loader2.js release/min/vs/loader.js
 ```
 
 ## Documentation
