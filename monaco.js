@@ -1,6 +1,6 @@
 import { require } from './release/min/vs/loader.js';
 
-require.config({ paths: { vs: './release/min/vs' } });
+require.config({ paths: { vs: 'https://code4fukui.github.io/monaco-editor/release/min/vs' } });
 
 const asyncRequire = async (path) => {
 	return new Promise((resolve) => {
