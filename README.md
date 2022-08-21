@@ -19,6 +19,7 @@ import { monaco } from "https://code4fukui.github.io/monaco-editor/monaco.js";
 const editor = monaco.editor.create(container, { language: "html" });
 editor.setValue("abc");
 ```
+- [sample html](index.html) - [online demo](https://code4fukui.github.io/monaco-editor/)
 
 ## Documentation
 
