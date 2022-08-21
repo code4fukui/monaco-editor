@@ -1,4 +1,5 @@
 **/node_modules/
 **/out/
-**/release/
+**/release/dev/
+**/release/esm/
 /test/manual/generated/**

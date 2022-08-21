@@ -12,21 +12,13 @@ Please note that this repository contains no source code for the code editor, it
 
 Try the editor out [on our website](https://microsoft.github.io/monaco-editor/index.html).
 
-## Installing
+## Usage
 
+```js
+import { monaco } from './release/monaco.js';
+const editor = monaco.editor.create(container, { language: 'html' });
+editor.setValue('abc');
 ```
-$ npm install monaco-editor
-```
-
-You will get:
-
-- inside `esm`: ESM version of the editor (compatible with e.g. webpack)
-- inside `dev`: AMD bundled, not minified
-- inside `min`: AMD bundled, and minified
-- inside `min-maps`: source maps for `min`
-- `monaco.d.ts`: this specifies the API of the editor (this is what is actually versioned, everything else is considered private and might break with any release).
-
-It is recommended to develop against the `dev` version, and in production to use the `min` version.
 
 ## Documentation
 

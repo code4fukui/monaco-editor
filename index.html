@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Monaco Editor Sample</title>
+	</head>
+	<body>
+		<h1>Monaco Editor Sample</h1>
+		<div id="container" style="width: 800px; height: 600px; border: 1px solid grey"></div>
+
+		<script type="module">
+			import { monaco } from './release/monaco.js';
+			const editor = monaco.editor.create(container, { language: 'html' });
+			editor.setValue('abc');
+		</script>
+	</body>
+</html>
