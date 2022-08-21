@@ -1,4 +1,4 @@
-# Monaco Editor
+# Monaco Editor  ES module version
 
 [![Build Status](https://dev.azure.com/ms/monaco-editor/_apis/build/status/microsoft.monaco-editor?label=website)](https://dev.azure.com/ms/monaco-editor/_build/latest?definitionId=3)
 
