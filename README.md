@@ -21,6 +21,17 @@ editor.setValue("abc");
 ```
 - [sample html](index.html) - [online demo](https://code4fukui.github.io/monaco-editor/)
 
+## How to build
+
+```sh
+npm i
+npm run release
+cat <<EOF >> release/min/vs/loader.js
+const _require = globalThis.require;
+export { _require as require };
+EOF
+```
+
 ## Documentation
 
 - Learn how to integrate the editor with these [complete samples](./samples/).
