@@ -1,3 +1,6 @@
+// Monaco Editor ES module version
+// https://github.com/code4fukui/monaco-editor
+
 import { require } from './release/min/vs/loader.js';
 
 require.config({ paths: { vs: 'https://code4fukui.github.io/monaco-editor/release/min/vs' } });

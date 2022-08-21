@@ -10,7 +10,8 @@
 		<div id="container" style="width: 800px; height: 600px; border: 1px solid grey"></div>
 
 		<script type="module">
-			import { monaco } from './monaco.js';
+			//import { monaco } from './monaco.js';
+			import { monaco } from 'https://code4fukui.github.io/monaco-editor/monaco.js';
 			const editor = monaco.editor.create(container, { language: 'html' });
 			editor.setValue('abc');
 		</script>
