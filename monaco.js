@@ -1,6 +1,6 @@
-import { require } from "./min/vs/loader.js";
+import { require } from './release/min/vs/loader.js';
 
-require.config({ paths: { vs: "./release/min/vs" } });
+require.config({ paths: { vs: './release/min/vs' } });
 
 const asyncRequire = async (path) => {
 	return new Promise((resolve) => {
@@ -8,7 +8,7 @@ const asyncRequire = async (path) => {
 	});
 };
 
-await asyncRequire(["vs/editor/editor.main"]);
+await asyncRequire(['vs/editor/editor.main']);
 const _monaco = globalThis.monaco;
 
 export { _monaco as monaco };
