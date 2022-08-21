@@ -15,7 +15,7 @@ Try the editor out [on our website](https://microsoft.github.io/monaco-editor/in
 ## Usage
 
 ```JavaScript
-import { monaco } from "https://code4fukui.github.io/monaco-editor/release/monaco.js";
+import { monaco } from "https://code4fukui.github.io/monaco-editor/monaco.js";
 const editor = monaco.editor.create(container, { language: "html" });
 editor.setValue("abc");
 ```
